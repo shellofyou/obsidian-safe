@@ -71,3 +71,11 @@ Quick starting guide for new plugin devs:
 ## API Documentation
 
 See https://github.com/obsidianmd/obsidian-api
+
+## 参考：
+- https://github.com/RafaelGB/obsidian-db-folder
+- https://github.com/meld-cp/obsidian-encrypt
+- https://github.com/windily-cloud/obsidian-sqlite3
+- https://github.com/WiseLibs/better-sqlite3
+
+
