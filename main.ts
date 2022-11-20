@@ -14,12 +14,14 @@ export default class MyPlugin extends Plugin {
 	settings: MyPluginSettings;
 
 	async onload() {
+		console.log("插件启用，开始设置插件！");
+		
 		await this.loadSettings();
 
 		// This creates an icon in the left ribbon.
-		const ribbonIconEl = this.addRibbonIcon('dice', 'Sample Plugin', (evt: MouseEvent) => {
+		const ribbonIconEl = this.addRibbonIcon('dice', 'Obsidian Safe', (evt: MouseEvent) => {
 			// Called when the user clicks the icon.
-			new Notice('This is a notice!');
+			new Notice('这是一个点击ribbon icon时触发的通知消息！');
 		});
 		// Perform additional things with the ribbon
 		ribbonIconEl.addClass('my-plugin-ribbon-class');
@@ -79,7 +81,8 @@ export default class MyPlugin extends Plugin {
 	}
 
 	onunload() {
-
+		console.log("插件禁用了！");
+		
 	}
 
 	async loadSettings() {
